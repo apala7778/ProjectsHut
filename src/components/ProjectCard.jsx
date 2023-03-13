@@ -15,7 +15,7 @@ const ProjectCard = ({ gh, name, link, title, description, tech }) => {
       <p className="mt-1  text-gray-500 dark:text-gray-500 flex flex-row overflow-auto">
         {tech.map((tag, i) => (
           <p
-            className="bg-green-400 rounded-full text-black pl-[.8rem] pr-[.8rem] m-[.2rem] xl:text-[1rem] md:text-[0.8rem]"
+            className="bg-green-400 rounded-full text-white hover:bg-white hover:text-green-400 pl-[.8rem] pr-[.8rem] m-[.2rem] xl:text-[1rem] md:text-[0.8rem]"
             key={i}
           >
             {tag}
@@ -24,7 +24,8 @@ const ProjectCard = ({ gh, name, link, title, description, tech }) => {
       </p>
       <p className="mt-2 text-white-800 dark:text-white-400">{description}</p>
       <a
-        className="mt-3 inline-flex items-center gap-2  text-sm font-medium p-3 justify-center bg-primary rounded text-white   xl:text-[1rem] md:text-[0.8rem]"
+        className="mt-3 inline-flex items-center gap-2  text-sm font-medium p-3 justify-center bg-primary rounded text-white  hover:bg-LightPrimary hover:text-DarkPrimary hover:font-bold  xl:text-[1rem] md:text-[0.8rem]"
+        
         href={link}
         target="_blank"
         rel="noreferrer"
